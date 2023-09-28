@@ -1,0 +1,20 @@
+<!--TheHeader -->
+<template>
+  <header class="flex items-center justify-between pt-6 pb-10">
+    <div>
+      <NuxtLink href="/">
+        <div class="flex items-center justify-between">
+          <div class="h-6 text-2xl font-semibold sm:block">
+            My Digital Garden
+          </div>
+        </div>
+      </NuxtLink>
+    </div>
+    <div class="flex items-center text-base leading-5">
+      <nav class="hidden sm:block">
+        <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/about">About</NuxtLink>
+        <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/articles">Articles</NuxtLink>
+      </nav>
+    </div>
+  </header>
+</template>
