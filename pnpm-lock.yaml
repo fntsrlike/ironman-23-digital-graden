@@ -14,6 +14,12 @@ devDependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.3)
+  '@types/lodash':
+    specifier: ^4.14.199
+    version: 4.14.199
+  '@types/luxon':
+    specifier: ^3.3.2
+    version: 3.3.2
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
@@ -1043,7 +1049,7 @@ packages:
     resolution: {integrity: sha512-7vZyOHfCAZg1PuCwy3B87MQOezW4pf8BC3gNDL92FW24BuLF0dl/BbFfxPeRxvjivuj5kkNM78x/qzNRCKfZgw==}
     hasBin: true
     dependencies:
-      '@nuxt/kit': 3.7.3
+      '@nuxt/kit': 3.7.4
       chalk: 5.3.0
       ci-info: 3.8.0
       consola: 3.2.3
@@ -1556,6 +1562,14 @@ packages:
 
   /@types/json-schema@7.0.13:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
+    dev: true
+
+  /@types/lodash@4.14.199:
+    resolution: {integrity: sha512-Vrjz5N5Ia4SEzWWgIVwnHNEnb1UE1XMkvY5DGXrAeOGE9imk0hgTHh5GyDjLDJi9OTCn9oo9dXH1uToK1VRfrg==}
+    dev: true
+
+  /@types/luxon@3.3.2:
+    resolution: {integrity: sha512-l5cpE57br4BIjK+9BSkFBOsWtwv6J9bJpC7gdXIzZyI0vuKvNTk0wZZrkQxMGsUAuGW9+WMNWF2IJMD7br2yeQ==}
     dev: true
 
   /@types/mdast@3.0.12:
