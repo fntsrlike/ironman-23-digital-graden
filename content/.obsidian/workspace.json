@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "articles/demo.md",
+                "file": "articles/A.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "articles/demo.md",
+                "file": "articles/A.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "articles/demo.md",
+                "file": "articles/A.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "articles/demo.md"
+                "file": "articles/A.md"
               }
             }
           }
@@ -148,7 +148,13 @@
   },
   "active": "ecf73a354d6f3f6b",
   "lastOpenFiles": [
+    "articles/Untitled.md",
+    "articles/Untitled 1.md",
+    "articles/A.md",
     "articles/demo.md",
+    "articles/markdown.md",
+    "articles/hello.md",
+    "articles/index.md",
     "_obsidian/templates/Timestamp.md",
     "_obsidian/templates/Articles.md",
     "hello.md",
