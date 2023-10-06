@@ -13,4 +13,11 @@ interface Post extends ParsedContent {
   draft: boolean
 }
 
+interface ToC {
+  children: ToC[]
+  depth: number
+  id: string
+  text: string
+}
+
 export {Post, ToC}
