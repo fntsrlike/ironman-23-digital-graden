@@ -1,2 +1,2 @@
 #/bin/sh
-rsync -av --delete content/_attachments/ ./public/_attachments/
+rsync -av --delete _write/content/_attachments/ ./public/_attachments/
