@@ -10,3 +10,8 @@ dist
 
 # directroies for content
 public/_attachments/**
+
+# Multiple Sources
+_*
+_*/**
+!*/**/_*
