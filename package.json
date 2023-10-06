@@ -2,9 +2,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "sync": "./bin/sync-attachments.sh",
+    "build": "pnpm run sync && nuxt build",
+    "dev": "pnpm run sync && nuxt dev",
+    "generate": "pnpm run sync && nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
