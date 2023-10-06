@@ -1,6 +1,5 @@
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('content:file:afterParse', (file) => {
-    console.log('test')
     if (!file._id.endsWith('.md')) {
       return
     }
