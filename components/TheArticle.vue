@@ -4,7 +4,7 @@
        <h1 class="tracking-tight font-extrabold text-gray-900 text-2xl leading-6 mb-1">
          {{ post.title }}
        </h1>
-       <div class="text-sm text-gray-600 dark:text-gray-400">
+       <div class="text-sm text-gray-600">
          <time
            v-if="post.published_at"
            :datetime="post.published_at"
@@ -27,7 +27,7 @@
            <li v-for="tag in post.tags" :key="tag" class="inline">
              <NuxtLink
                :href="'/tags/' + kebabCase(tag)"
-               class="mr-3 text-sm font-medium uppercase text-teal-500 hover:text-teal-600 dark:hover:text-teal-400"
+               class="mr-3 text-sm font-medium uppercase text-teal-500 hover:text-teal-600"
              >
                {{ tag.split(' ').join('-') }}
              </NuxtLink>

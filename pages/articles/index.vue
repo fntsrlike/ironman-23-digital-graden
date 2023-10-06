@@ -1,6 +1,6 @@
 <template>
   <section class="pb-24">
-    <div class="divide-y divide-gray-200 dark:divide-gray-700">
+    <div class="divide-y divide-gray-200">
       <header class="pb-8 space-y-2 md:space-y-5">
         <div>
           <h1 class="tracking-tight font-extrabold text-gray-900 text-2xl leading-6 mb-1">
