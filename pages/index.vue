@@ -1,5 +1,5 @@
 <template>
-  <div class="prose mb-24">
+  <div class="mb-24">
     <ContentDoc>
       <template #default="{ doc }">
         <ContentRenderer :value="doc" />

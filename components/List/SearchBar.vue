@@ -7,12 +7,12 @@
         :aria-label="placeholderText"
         type="text"
         :placeholder="placeholderText"
-        class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+        class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 focus:border-primary-500 focus:ring-primary-500"
         @input="$emit('update:modelValue', $event.target.value)"
       />
     </label>
     <svg
-      class="absolute right-3 top-3 h-5 w-5 text-gray-400"
+      class="absolute right-3 top-3 h-5 w-5"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"

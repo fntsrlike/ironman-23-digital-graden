@@ -3,7 +3,7 @@
     <div class="divide-y divide-gray-200">
       <header class="pt-6 pb-8 space-y-2 md:space-y-5">
         <div>
-          <h1 class="tracking-tight font-extrabold text-gray-900 text-2xl leading-6 mb-1">
+          <h1 class="tracking-tight font-extrabold text-2xl leading-6 mb-1">
             Tag: {{ tag }}
           </h1>
         </div>

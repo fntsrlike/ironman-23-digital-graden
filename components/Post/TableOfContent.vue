@@ -6,7 +6,7 @@
       <template v-for="primaryLink of toc" :key="primaryLink.id">
         <li>
           <NuxtLink
-            class="font-normal text-slate-700"
+            class="font-normal"
             :to="`#${primaryLink.id}`"
           >
             {{ primaryLink.text }}
@@ -18,7 +18,7 @@
             :key="secondaryLink.id"
           >
             <NuxtLink
-              class="font-normal text-slate-700"
+              class="font-normal"
               :to="`#${secondaryLink.id}`"
             >
               {{ secondaryLink.text }}

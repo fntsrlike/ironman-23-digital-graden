@@ -13,7 +13,7 @@
           <PostTag :text="tag" />
           <NuxtLink
             :href="'/tags/' + kebabCase(tag)"
-            class="-ml-2 text-sm font-semibold uppercase text-gray-600 no-underline"
+            class="-ml-2 text-sm font-semibold uppercase no-underline"
             aria-label="
           posts
           tagged

@@ -5,7 +5,7 @@
     <dl>
       <dt class="sr-only">Published on</dt>
       <dd
-        class="text-base font-medium leading-6 text-gray-500"
+        class="text-base font-medium leading-6"
       >
         <time v-if="datetime" dateTime="{{datetime}}">
           {{
@@ -18,7 +18,7 @@
       <div>
         <NuxtLink :href="item._path">
           <h3
-            class="text-xl font-bold leading-8 tracking-tight text-gray-900"
+            class="text-xl font-bold leading-8 tracking-tight"
           >
             {{ item.title }}
           </h3>

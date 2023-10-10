@@ -1,9 +1,9 @@
 <template>
   <header class="pb-6" >
-    <h1 class="tracking-tight font-extrabold text-gray-900 text-2xl leading-6 mb-1">
+    <h1 class="tracking-tight font-extrabold text-2xl leading-6 mb-1">
       {{ post.title }}
     </h1>
-    <div class="text-sm text-gray-600">
+    <div class="text-sm">
       <time
       v-if="post.published_at"
       :datetime="post.published_at"
