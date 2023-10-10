@@ -12,7 +12,7 @@
       <header>
         <h2 class="mb-0 inline">Recently</h2>
       </header>
-      <RecentlyArticleList />
+      <RecentlyPostList post-type="article"/>
     </section>
   </div>
 </template>

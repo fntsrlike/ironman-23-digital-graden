@@ -17,6 +17,11 @@ const IsoDateTimeRegExp = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z/
 const recentlyCount = 5
 const slug = 'articles'
 
+const props = defineProps<{
+  postType: 'article' | 'notes' | 'liberari'
+}>()
+
+
 const { data } = await useAsyncData(slug, () =>
 queryContent(slug)
     .only(['title', 'created_at', 'published_at', '_path'])

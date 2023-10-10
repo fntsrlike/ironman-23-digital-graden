@@ -14,6 +14,9 @@
       <nav class="hidden sm:block">
         <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/about">About</NuxtLink>
         <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/articles">Articles</NuxtLink>
+        <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/notes">Notes</NuxtLink>
+        <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/literatures">Literatures</NuxtLink>
+        <NuxtLink class="p-1 font-medium text-gray-900 sm:p-4" href="/moc">MoC</NuxtLink>
       </nav>
     </div>
   </header>

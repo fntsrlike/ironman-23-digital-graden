@@ -1,3 +1,0 @@
-![](me.png)
-
-[Back home](/)

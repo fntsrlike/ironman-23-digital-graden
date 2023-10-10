@@ -4,14 +4,14 @@
       <header class="pb-8 space-y-2 md:space-y-5">
         <div>
           <h1 class="tracking-tight font-extrabold text-gray-900 text-2xl leading-6 mb-1">
-            Aritcles
+            {{ route.name?.toString().toUpperCase() }}
           </h1>
         </div>
-        <SearchBar v-model="searchValue" placeholder-text="Search announce" />
+        <ListSearchBar v-model="searchValue" placeholder-text="Search announce" />
       </header>
       <main>
         <ul>
-          <li v-for="article in filteredArticles" :key="article._path" class="py-4">
+          <li v-for="article in filteredPosts" :key="article._path" class="py-4">
             <ListItem :item="article" />
           </li>
         </ul>
@@ -23,19 +23,20 @@
 import { Post } from '@/types/index'
 import { DateTime } from 'luxon';
 
+const route = useRoute()
+const slug = route.fullPath
+
 const searchValue = ref('')
 
-
-const slug = 'articles'
 const { data } = await useAsyncData(slug, () =>
   queryContent(slug)
     .where({ slug: { $ne: slug }, _file: { $not: { $contains: 'index' } } })
     .sort({ created_at: -1, published_at: -1 })
     .find()
 )
-const post = data.value as Post[]
+const posts = data.value as Post[]
 
-const articles = post.map((post) => {
+const patchedPosts = posts.map((post) => {
   const hasPostTags = !!post.tags
   if (!hasPostTags) {
     post.tags = []
@@ -43,8 +44,8 @@ const articles = post.map((post) => {
   return post
 })
 
-const filteredArticles = computed(() => {
-  return articles.filter((post: Post) => {
+const filteredPosts = computed(() => {
+  return patchedPosts.filter((post: Post) => {
     const tags = post.tags.filter((tag) => !!tag)
     const searchContent =
       post.title +
