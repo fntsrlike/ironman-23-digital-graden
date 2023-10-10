@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Articles</h3>
+    <h3>{{ postType.toUpperCase() }}</h3>
     <ol>
       <li v-for="post in data" :key="post._path" class="mb-0 leading-7">
         <span class="inline mr-2">{{ DateTime.fromISO(post.created_at).toLocal().toFormat('yyyy-LL-dd') }}</span>
@@ -15,15 +15,14 @@ import { DateTime } from 'luxon'
 
 const IsoDateTimeRegExp = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z/
 const recentlyCount = 5
-const slug = 'articles'
 
 const props = defineProps<{
-  postType: 'article' | 'notes' | 'liberari'
+  postType: 'articles' | 'notes' | 'literatures' | 'moc'
 }>()
 
 
-const { data } = await useAsyncData(slug, () =>
-queryContent(slug)
+const { data } = await useAsyncData(props.postType, () =>
+queryContent(props.postType)
     .only(['title', 'created_at', 'published_at', '_path'])
     .where({ published_at: { $eq: IsoDateTimeRegExp } })
     .limit(recentlyCount)
