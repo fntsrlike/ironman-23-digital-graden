@@ -18,6 +18,7 @@
         <NuxtLink class="p-1 font-medium sm:p-4" href="/literatures">Literatures</NuxtLink>
         <NuxtLink class="p-1 font-medium sm:p-4" href="/moc">MoC</NuxtLink>
       </nav>
+      <ThemeToggle />
     </div>
   </header>
 </template>

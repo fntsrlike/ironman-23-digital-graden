@@ -9,7 +9,7 @@
 useHead({
   bodyAttrs: {
     class:
-      'bg-white text-gray-900 dark:bg-neutral-900 dark:text-white',
+      'bg-white text-gray-700 dark:bg-neutral-900 dark:text-gray-300',
   },
   htmlAttrs: {
     lang: 'zh-Hant-TW',
