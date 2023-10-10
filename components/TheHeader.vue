@@ -11,7 +11,7 @@
       </NuxtLink>
     </div>
     <div class="flex items-center text-base leading-5">
-      <nav class="hidden sm:block">
+      <nav class="block">
         <NuxtLink class="p-1 font-medium sm:p-4" href="/about">About</NuxtLink>
         <NuxtLink class="p-1 font-medium sm:p-4" href="/articles">Articles</NuxtLink>
         <NuxtLink class="p-1 font-medium sm:p-4" href="/notes">Notes</NuxtLink>
