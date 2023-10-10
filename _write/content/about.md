@@ -1,3 +1,3 @@
-![](_attachments/me.png)
+![](me.png)
 
 [Back home](/)

@@ -4,7 +4,7 @@
 
     <ol class="list-outside text-sm">
       <template v-for="primaryLink of toc" :key="primaryLink.id">
-        <li class="toc2">
+        <li>
           <NuxtLink
             class="font-normal text-slate-700"
             :to="`#${primaryLink.id}`"
@@ -31,9 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import { ToC } from '@/types/index'
+import type { TocLink } from '@nuxt/content/dist/runtime/types'
 
-defineProps<{
-  toc: ToC[]
+const props = defineProps<{
+  toc: TocLink[]
 }>()
 </script>

@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync": "./bin/sync-attachments.sh",
+    "sync": "echo 'test'",
     "build": "pnpm run sync && nuxt build",
     "dev": "pnpm run sync && nuxt dev",
     "generate": "pnpm run sync && nuxt generate",

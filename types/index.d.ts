@@ -1,6 +1,5 @@
-import { ParsedContent } from "@nuxt/content/dist/runtime/types"
-
-interface Post extends ParsedContent {
+import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
+interface Post extends MarkdownParsedContent {
   title: string
   title_en: string
   slug: string
@@ -19,5 +18,18 @@ interface ToC {
   id: string
   text: string
 }
+
+export interface MarkdownRoot {
+  type: 'root'
+  children: MarkdownNode[]
+  props?: Record<string, any>
+}
+export interface Toc {
+  title: string
+  depth: number
+  searchDepth: number
+  links: TocLink[]
+}
+
 
 export {Post, ToC}

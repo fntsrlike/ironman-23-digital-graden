@@ -1,5 +1,8 @@
 <template>
   <ContentDoc v-slot="{ doc }">
-    <TheArticle :post="doc" />
+    <PostPage :post="(doc as Post)" />
   </ContentDoc>
 </template>
+<script setup lang="ts">
+import { Post } from '@/types/index'
+</script>
