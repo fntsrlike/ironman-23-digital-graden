@@ -11,7 +11,7 @@
 
 
 <script setup lang="ts">
-import { defineComponent, onMounted, ref, watch } from "vue";
+import { onMounted, ref, watch } from "vue";
 
 const props = defineProps({
   repo: {
@@ -38,7 +38,7 @@ const isInit = ref(false)
 const vueUtterances = ref(null);
 
 onMounted(() => {
-  let utterances = document.createElement("script");
+  const utterances = document.createElement("script");
 
   utterances.async = true;
   utterances.setAttribute("src", "https://utteranc.es/client.js");
@@ -49,7 +49,6 @@ onMounted(() => {
   }
   utterances.setAttribute("theme", props.theme);
   utterances.setAttribute("crossorigin", "anonymous");
-
   vueUtterances.value.appendChild(utterances);
 
   isInit.value = true
@@ -58,8 +57,6 @@ onMounted(() => {
 watch(
   () => props.theme,
   (newTheme, oldTheme) => {
-    console.log(newTheme);
-    console.log(oldTheme);
     vueUtterances.value.querySelector("iframe").contentWindow.postMessage(
       {
         type: "set-theme",
