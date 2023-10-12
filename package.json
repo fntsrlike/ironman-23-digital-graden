@@ -20,5 +20,8 @@
     "nuxt": "^3.7.3",
     "nuxt-icon": "^0.5.0",
     "remark-breaks": "^3.0.3"
+  },
+  "dependencies": {
+    "@giscus/vue": "^2.3.0"
   }
 }

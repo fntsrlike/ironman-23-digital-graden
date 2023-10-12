@@ -1,20 +1,13 @@
 <template>
   <section>
     <header>
-      <h2>Comments</h2>
+      <h2 class="sr-only">Comments</h2>
     </header>
     <main>
-      <VueUtterances :repo="repo" :issueTerm="issueTerm" :theme="theme" :label="label" />
+      <AdaptGiscus />
     </main>
   </section>
 </template>
 <script setup lang="ts">
-const route = useRoute()
-const slug = route.fullPath
-
-const repo = 'fntsrlike/local-garden'
-const issueTerm = slug
-const theme = 'github-dark'
-const label = 'utterances'
-
+import AdaptGiscus from '../Adpat/AdaptGiscus.vue';
 </script>
