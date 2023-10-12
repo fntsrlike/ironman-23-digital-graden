@@ -23,10 +23,8 @@ function convertWikiLink(text: string): string {
 
 function convertLinkMarkdown(line: string) {
   const regExp = generateWikiLinkRegExp()
-  console.log(`line: ${line}`)
   return line.replaceAll(regExp, (_, linkPath, linkAlias) => {
     const isExist = linkPath.startsWith('/')
-    console.log(`linkPath: ${linkPath}`)
     const filename = linkPath.split('/').pop()
     const unExistNoteLink = linkAlias || linkPath
     const linkMarkdown = `[${linkAlias || filename}](<${encondingNoneAlphabetUrl(linkPath)}>)`
