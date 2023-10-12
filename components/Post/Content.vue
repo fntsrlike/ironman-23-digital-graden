@@ -7,7 +7,7 @@
       ></PostTableOfContent>
     </div>
     <div class="md:basis-3/4 md:mr-4">
-      <ContentRenderer :value="post" class="" />
+      <ContentRenderer :value="post" />
     </div>
   </div>
 </template>
