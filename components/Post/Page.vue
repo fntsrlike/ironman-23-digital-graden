@@ -4,6 +4,7 @@
      <PostContent :post="post"/>
      <PostFooter :post="post"/>
    </article>
+   <PostMessageBoard />
 </template>
 <script setup lang="ts">
 import { Post } from '@/types/index'
