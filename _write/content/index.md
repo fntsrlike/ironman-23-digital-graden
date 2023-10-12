@@ -1,5 +1,4 @@
 ---
-title: '主頁'
 created_at: 2023-05-01 14:55:52
 published_at: 2023-05-01 14:55:52
 tags: []
