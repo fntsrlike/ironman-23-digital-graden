@@ -6,7 +6,7 @@
           <h1 class="tracking-tight font-extrabold text-2xl leading-6 mb-1">
             {{ route.name?.toString().toUpperCase() }}
           </h1>
-          <ContentDoc />
+          <PostGardenDoc />
         </div>
         <ListSearchBar v-model="searchValue" placeholder-text="Search announce" />
       </header>

@@ -1,13 +1,6 @@
 <template>
   <div class="mb-24">
-    <ContentDoc>
-      <template #default="{ doc }">
-        <ContentRenderer :value="doc" />
-      </template>
-      <template #not-found>
-        <p>There has no markdown file for index.</p>
-      </template>
-    </ContentDoc>
+    <PostGardenDoc />
     <section class="mt-12">
       <header>
         <h2 class="mb-0 inline">Recently</h2>
@@ -19,3 +12,6 @@
     </section>
   </div>
 </template>
+<script setup lang="ts">
+useGarden()
+</script>
