@@ -8,7 +8,9 @@
 <script setup lang="ts">
 import { Post } from '@/types/index'
 
-defineProps<{
+const { post } = defineProps<{
  post: Post
 }>()
+
+useGarden(post)
 </script>

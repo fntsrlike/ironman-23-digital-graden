@@ -19,6 +19,8 @@
   </section>
 </template>
 <script setup lang="ts">
+useGarden()
+
 const route = useRoute()
 const tag = route.params.slug.toString().toUpperCase()
 

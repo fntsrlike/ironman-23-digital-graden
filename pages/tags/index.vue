@@ -30,6 +30,8 @@
 <script setup>
 import { kebabCase, toLower } from 'lodash-es/string'
 
+useGarden()
+
 const tagsCount = {}
 
 // [TODO]: extract to composable

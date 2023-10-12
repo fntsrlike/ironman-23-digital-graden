@@ -24,6 +24,8 @@
 import { Post } from '@/types/index'
 import { DateTime } from 'luxon';
 
+useGarden()
+
 const route = useRoute()
 const slug = route.fullPath
 
