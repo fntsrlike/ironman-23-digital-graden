@@ -57,7 +57,7 @@ jobs:
         run: |
           TZ=Asia/Taipei echo "BUILD_TIME=$(date +'%Y-%m-%dT%H:%M:%S%:z')" >> $GITHUB_ENV
 
-      - name: Static HTML export with Nuxt
+      - name: Export static HTML artifact
         run: pnpm run generate
 
       - name: Upload artifact
