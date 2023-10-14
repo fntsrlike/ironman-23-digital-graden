@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -46,11 +46,10 @@ jobs:
         run: pnpm install
 
       - name: Get blog posts
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ${{ vars.CONTENT_REPO }}
           ref: main
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
           path: ./_write
 
       - name: Get build time
