@@ -28,6 +28,18 @@ export default defineNuxtConfig({
         base: resolve(__dirname, '_write/content'),
         driver: 'fs',
       }
-    }
+    },
+    highlight: {
+      // Theme used in all color schemes.
+      theme: 'monokai',
+      preload: [
+        'javascript',
+        'typescript',
+        'vue',
+        'vue-html',
+        'ruby',
+        'html'
+      ],
+    },
   },
 })
